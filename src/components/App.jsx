@@ -9,6 +9,7 @@ export class App extends Component {
     contacts: [],
     filter: '',
   };
+
   componentDidUpdate(prevProps, prevState) {
     if (prevState.contacts !== this.state.contacts) {
       localStorage.setItem(KEY, JSON.stringify(this.state.contacts));
